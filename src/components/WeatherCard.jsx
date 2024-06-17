@@ -4,7 +4,7 @@ import WeatherFooter from './WeatherFooter';
 import Spinner from './Spinner';
 
 const WeatherCard = (props) => {
-  const { loading, icon, data, date } = props;
+  const { loading, icon, data } = props;
   return (
     <div className=" w-full max-w-[450px] bg-black/20 min-h-[584px] text-white backdrop-blur-[32px] rounded-[32px] py-12 px-6">
       {loading ? (
@@ -12,7 +12,7 @@ const WeatherCard = (props) => {
       ) : (
         <div>
           {/* Body Head */}
-          <WeatherTop icon={icon} date={date} data={data} />
+          <WeatherTop icon={icon} data={data} />
           {/* Body */}
           <WeatherBody data={data} />
           {/* Footer */}

@@ -78,15 +78,13 @@ const App = () => {
       console.log('No weather data');
   }
 
-  const date = new Date();
-
   return (
     <div className="w-full h-screen bg-gradientBg bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center px-4 lg:px-0">
       <Error errorMsg={errorMsg} />
       {/* Form */}
       <Form setLocation={setLocation} />
       {/* Weather Card */}
-      <WeatherCard loading={loading} icon={icon} date={date} data={data} />
+      <WeatherCard loading={loading} icon={icon} data={data} />
     </div>
   );
 };

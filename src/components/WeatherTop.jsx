@@ -1,7 +1,6 @@
-import React from 'react';
-
 const WeatherTop = (props) => {
-  const { date, icon, data } = props;
+  const date = new Date();
+  const { icon, data } = props;
   return (
     <div className=" flex items-center gap-x-5">
       <div className=" text-[87px]">{icon}</div>
